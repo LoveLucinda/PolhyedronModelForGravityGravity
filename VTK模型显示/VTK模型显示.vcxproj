@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFE3F43E-4E9A-4095-95E5-6A9264C2E2B0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VTK模型显示</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;vtkRenderingCore_INCLUDE="D:/VTK7.0/bin/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingOpenGL2.h";_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\VTK7.0\bin\Filters\Sources;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Sources;D:\VTK7.0\bin\Common\ComputationalGeometry;D:\VTK7.0\VTK-7.0.0.rc1\Common\ComputationalGeometry;D:\VTK7.0\bin\Common\DataModel;D:\VTK7.0\VTK-7.0.0.rc1\Common\DataModel;D:\VTK7.0\bin\Common\Math;D:\VTK7.0\VTK-7.0.0.rc1\Common\Math;D:\VTK7.0\bin\Common\Core;D:\VTK7.0\VTK-7.0.0.rc1\Common\Core;D:\VTK7.0\bin\Utilities\KWSys;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\KWSys;D:\VTK7.0\bin\Common\Misc;D:\VTK7.0\VTK-7.0.0.rc1\Common\Misc;D:\VTK7.0\bin\Common\System;D:\VTK7.0\VTK-7.0.0.rc1\Common\System;D:\VTK7.0\bin\Common\Transforms;D:\VTK7.0\VTK-7.0.0.rc1\Common\Transforms;D:\VTK7.0\bin\Filters\General;D:\VTK7.0\VTK-7.0.0.rc1\Filters\General;D:\VTK7.0\bin\Filters\Core;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Core;D:\VTK7.0\bin\Common\ExecutionModel;D:\VTK7.0\VTK-7.0.0.rc1\Common\ExecutionModel;D:\VTK7.0\bin\Interaction\Style;D:\VTK7.0\VTK-7.0.0.rc1\Interaction\Style;D:\VTK7.0\bin\Filters\Extraction;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Extraction;D:\VTK7.0\bin\Filters\Statistics;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Statistics;D:\VTK7.0\bin\Imaging\Fourier;D:\VTK7.0\VTK-7.0.0.rc1\Imaging\Fourier;D:\VTK7.0\bin\Imaging\Core;D:\VTK7.0\VTK-7.0.0.rc1\Imaging\Core;D:\VTK7.0\bin\ThirdParty\alglib;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\alglib;D:\VTK7.0\bin\Rendering\Core;D:\VTK7.0\VTK-7.0.0.rc1\Rendering\Core;D:\VTK7.0\bin\Common\Color;D:\VTK7.0\VTK-7.0.0.rc1\Common\Color;D:\VTK7.0\bin\Filters\Geometry;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Geometry;D:\VTK7.0\bin\Rendering\OpenGL2;D:\VTK7.0\VTK-7.0.0.rc1\Rendering\OpenGL2;D:\VTK7.0\bin\Imaging\Hybrid;D:\VTK7.0\VTK-7.0.0.rc1\Imaging\Hybrid;D:\VTK7.0\bin\IO\Image;D:\VTK7.0\VTK-7.0.0.rc1\IO\Image;D:\VTK7.0\bin\Utilities\DICOMParser;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\DICOMParser;D:\VTK7.0\bin\IO\Core;D:\VTK7.0\VTK-7.0.0.rc1\IO\Core;D:\VTK7.0\bin\ThirdParty\zlib;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\zlib;D:\VTK7.0\bin\Utilities\MetaIO\vtkmetaio;D:\VTK7.0\bin\Utilities\MetaIO;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\MetaIO;D:\VTK7.0\bin\ThirdParty\jpeg;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\jpeg;D:\VTK7.0\bin\ThirdParty\png;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\png;D:\VTK7.0\bin\ThirdParty\tiff;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\tiff;D:\VTK7.0\bin\Utilities\EncodeString;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\EncodeString;D:\VTK7.0\bin\ThirdParty\glew;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\glew;..\基于多面体的自适应地形改正;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Hybrid;D:\VTK7.0\bin\Filters\Hybrid;D:\VTK7.0\VTK-7.0.0.rc1\IO\XML;D:\VTK7.0\bin\IO\XML;D:\VTK7.0\bin\IO\Geometry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\VTK7.0\bin\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;vtkFiltersSources-7.0.lib;vtkCommonComputationalGeometry-7.0.lib;vtkCommonDataModel-7.0.lib;vtkCommonMath-7.0.lib;vtkCommonCore-7.0.lib;vtksys-7.0.lib;vtkCommonMisc-7.0.lib;vtkCommonSystem-7.0.lib;vtkCommonTransforms-7.0.lib;vtkFiltersGeneral-7.0.lib;vtkFiltersCore-7.0.lib;vtkCommonExecutionModel-7.0.lib;vtkInteractionStyle-7.0.lib;vtkFiltersExtraction-7.0.lib;vtkFiltersStatistics-7.0.lib;vtkImagingFourier-7.0.lib;vtkImagingCore-7.0.lib;vtkalglib-7.0.lib;vtkRenderingCore-7.0.lib;vtkCommonColor-7.0.lib;vtkFiltersGeometry-7.0.lib;vtkRenderingOpenGL2-7.0.lib;vtkImagingHybrid-7.0.lib;vtkIOImage-7.0.lib;vtkDICOMParser-7.0.lib;vtkIOCore-7.0.lib;vtkzlib-7.0.lib;vtkmetaio-7.0.lib;vtkjpeg-7.0.lib;vtkpng-7.0.lib;vtktiff-7.0.lib;vtkglew-7.0.lib;ws2_32.lib;Psapi.lib;comctl32.lib;wsock32.lib;glu32.lib;opengl32.lib;vtkFiltersHybrid-7.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingCore_INCLUDE="D:/VTK7.0/bin/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingOpenGL2.h";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\VTK7.0\bin\Filters\Sources;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Sources;D:\VTK7.0\bin\Common\ComputationalGeometry;D:\VTK7.0\VTK-7.0.0.rc1\Common\ComputationalGeometry;D:\VTK7.0\bin\Common\DataModel;D:\VTK7.0\VTK-7.0.0.rc1\Common\DataModel;D:\VTK7.0\bin\Common\Math;D:\VTK7.0\VTK-7.0.0.rc1\Common\Math;D:\VTK7.0\bin\Common\Core;D:\VTK7.0\VTK-7.0.0.rc1\Common\Core;D:\VTK7.0\bin\Utilities\KWSys;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\KWSys;D:\VTK7.0\bin\Common\Misc;D:\VTK7.0\VTK-7.0.0.rc1\Common\Misc;D:\VTK7.0\bin\Common\System;D:\VTK7.0\VTK-7.0.0.rc1\Common\System;D:\VTK7.0\bin\Common\Transforms;D:\VTK7.0\VTK-7.0.0.rc1\Common\Transforms;D:\VTK7.0\bin\Filters\General;D:\VTK7.0\VTK-7.0.0.rc1\Filters\General;D:\VTK7.0\bin\Filters\Core;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Core;D:\VTK7.0\bin\Common\ExecutionModel;D:\VTK7.0\VTK-7.0.0.rc1\Common\ExecutionModel;D:\VTK7.0\bin\Interaction\Style;D:\VTK7.0\VTK-7.0.0.rc1\Interaction\Style;D:\VTK7.0\bin\Filters\Extraction;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Extraction;D:\VTK7.0\bin\Filters\Statistics;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Statistics;D:\VTK7.0\bin\Imaging\Fourier;D:\VTK7.0\VTK-7.0.0.rc1\Imaging\Fourier;D:\VTK7.0\bin\Imaging\Core;D:\VTK7.0\VTK-7.0.0.rc1\Imaging\Core;D:\VTK7.0\bin\ThirdParty\alglib;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\alglib;D:\VTK7.0\bin\Rendering\Core;D:\VTK7.0\VTK-7.0.0.rc1\Rendering\Core;D:\VTK7.0\bin\Common\Color;D:\VTK7.0\VTK-7.0.0.rc1\Common\Color;D:\VTK7.0\bin\Filters\Geometry;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Geometry;D:\VTK7.0\bin\Rendering\OpenGL2;D:\VTK7.0\VTK-7.0.0.rc1\Rendering\OpenGL2;D:\VTK7.0\bin\Imaging\Hybrid;D:\VTK7.0\VTK-7.0.0.rc1\Imaging\Hybrid;D:\VTK7.0\bin\IO\Image;D:\VTK7.0\VTK-7.0.0.rc1\IO\Image;D:\VTK7.0\bin\Utilities\DICOMParser;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\DICOMParser;D:\VTK7.0\bin\IO\Core;D:\VTK7.0\VTK-7.0.0.rc1\IO\Core;D:\VTK7.0\bin\ThirdParty\zlib;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\zlib;D:\VTK7.0\bin\Utilities\MetaIO\vtkmetaio;D:\VTK7.0\bin\Utilities\MetaIO;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\MetaIO;D:\VTK7.0\bin\ThirdParty\jpeg;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\jpeg;D:\VTK7.0\bin\ThirdParty\png;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\png;D:\VTK7.0\bin\ThirdParty\tiff;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\tiff;D:\VTK7.0\bin\Utilities\EncodeString;D:\VTK7.0\VTK-7.0.0.rc1\Utilities\EncodeString;D:\VTK7.0\bin\ThirdParty\glew;D:\VTK7.0\VTK-7.0.0.rc1\ThirdParty\glew;..\基于多面体的自适应地形改正;D:\VTK7.0\VTK-7.0.0.rc1\Filters\Hybrid;D:\VTK7.0\bin\Filters\Hybrid;D:\VTK7.0\VTK-7.0.0.rc1\IO\XML;D:\VTK7.0\bin\IO\XML;D:\VTK7.0\bin\IO\Geometry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\VTK7.0\bin\lib\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;vtkFiltersSources-7.0.lib;vtkCommonComputationalGeometry-7.0.lib;vtkCommonDataModel-7.0.lib;vtkCommonMath-7.0.lib;vtkCommonCore-7.0.lib;vtksys-7.0.lib;vtkCommonMisc-7.0.lib;vtkCommonSystem-7.0.lib;vtkCommonTransforms-7.0.lib;vtkFiltersGeneral-7.0.lib;vtkFiltersCore-7.0.lib;vtkCommonExecutionModel-7.0.lib;vtkInteractionStyle-7.0.lib;vtkFiltersExtraction-7.0.lib;vtkFiltersStatistics-7.0.lib;vtkImagingFourier-7.0.lib;vtkImagingCore-7.0.lib;vtkalglib-7.0.lib;vtkRenderingCore-7.0.lib;vtkCommonColor-7.0.lib;vtkFiltersGeometry-7.0.lib;vtkRenderingOpenGL2-7.0.lib;vtkImagingHybrid-7.0.lib;vtkIOImage-7.0.lib;vtkDICOMParser-7.0.lib;vtkIOCore-7.0.lib;vtkzlib-7.0.lib;vtkmetaio-7.0.lib;vtkjpeg-7.0.lib;vtkpng-7.0.lib;vtktiff-7.0.lib;vtkglew-7.0.lib;ws2_32.lib;Psapi.lib;comctl32.lib;wsock32.lib;glu32.lib;opengl32.lib;vtkFiltersHybrid-7.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\基于多面体的自适应地形改正\CoordinateTrans.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\基于多面体的自适应地形改正\CoordinateTrans.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="VTK模型显示.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
